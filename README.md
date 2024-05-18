@@ -56,7 +56,7 @@ db.js: Configuration file for database connection
  URLS:
  ====
 local url for postman =http://localhost:5000/api/v1
-Published postman documentation url: https://documenter.getpostman.com/view/21753101/2sA3QmCZg6
+remote url: https://task-manager-owiz.onrender.com
 
 HOW TO SETUP AND RUN THE APPLICATION:
 ===========================
@@ -75,7 +75,9 @@ ENDPOINTS AND USAGE SAMPLE:
 ==========================
 - register
  Method: POST
- url = http://localhost:5000/api/v1/register
+ local url = http://localhost:5000/api/v1/register
+ remote url =https://task-manager-owiz.onrender.com/api/v1/register
+
  body:
  {
     "fullname": "John Doe",
@@ -85,7 +87,8 @@ ENDPOINTS AND USAGE SAMPLE:
 
 - login
 Method: POST
-url = http://localhost:5000/api/v1/login
+local url = http://localhost:5000/api/v1/login
+remote url =https://task-manager-owiz.onrender.com/api/v1/login
 body:
 {
     "email": "johndoe@gmail.com",
@@ -94,7 +97,8 @@ body:
 
 - create-task
 Method: POST
-url = http://localhost:5000/api/v1/create-task
+local url = http://localhost:5000/api/v1/create-task
+remote url =https://task-manager-owiz.onrender.com/api/v1/create-task
 body:
 {
     "title": "Assessment",
@@ -103,19 +107,22 @@ body:
 
 - tasks
 Method: GET
-url = http://localhost:5000/api/v1/tasks
+local url = http://localhost:5000/api/v1/tasks
+remote url =https://task-manager-owiz.onrender.com/api/v1/tasks
 
 
 - task/id
 Method: GET
-url = http://localhost:5000/api/v1/task/id
+local url = http://localhost:5000/api/v1/task/id
+remote url =https://task-manager-owiz.onrender.com/api/v1/task/id
 {
     "user": "12345676767676776666"
 }
 
 - edit-task/id
 Method: UPDATE
-url = http://localhost:5000/api/v1/edit-task/id
+local url = http://localhost:5000/api/v1/edit-task/id
+remote url =https://task-manager-owiz.onrender.com/api/v1/edit-task/id
 {
     "title": "Edited task",
     "description": "This task is edited",
@@ -124,5 +131,6 @@ url = http://localhost:5000/api/v1/edit-task/id
  
 - delete-task/id
 Method: DELETE
-url = http://localhost:5000/api/v1/delete-task/id
+local url = http://localhost:5000/api/v1/delete-task/id
+remote url =https://task-manager-owiz.onrender.com/api/v1/delete-task/id
  
