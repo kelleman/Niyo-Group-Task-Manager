@@ -37,4 +37,4 @@ app.use('/api/v1', [authRoutes, taskRoutes]);
 
 const PORT = process.env.PORT || 4000;
 
-server.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+server.listen(PORT, () => console.log(`App listening on port ${PORT}`));

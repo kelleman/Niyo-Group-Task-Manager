@@ -56,6 +56,7 @@ db.js: Configuration file for database connection
  URLS:
  ====
 local url for postman =http://localhost:5000/api/v1
+Published postman documentation url: https://documenter.getpostman.com/view/21753101/2sA3QmCZg6
 
 HOW TO SETUP AND RUN THE APPLICATION:
 ===========================
