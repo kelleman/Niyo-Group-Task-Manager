@@ -58,8 +58,11 @@ db.js: Configuration file for database connection
 
  URLS:
  ====
-local url for postman =http://localhost:5000/api/v1
-remote url: https://task-manager-owiz.onrender.com/api/v1
+- Postman Documentation url: https://documenter.getpostman.com/view/21753101/2sA3QmCuER
+
+- local url for postman =http://localhost:5000/api/v1
+- remote url: https://task-manager-owiz.onrender.com/api/v1
+
 
 HOW TO SETUP AND RUN THE APPLICATION:
 ===========================
