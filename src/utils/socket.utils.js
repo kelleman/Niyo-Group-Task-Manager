@@ -1,5 +1,9 @@
 const sendTaskCreatedNotification = (task, io) => {
-    io.emit('taskCreated', task);
+    if (io) {
+        io.emit('taskCreated', task);
+    } else {
+        console.error('Socket.io instance is not defined');
+    }
 };
 
 module.exports = {

@@ -1,7 +1,7 @@
 TASK MANAGEMENT SYSTEM, BACKEND DEVELOPER ASSESSMENT
 =======================================================
 This is a task management system using Node.js, Express.js.
-The system allow only authenticated users to create, retrieve, update and delete tasks. Also a real-time notification system using socket.io that emit events to let other users know when a task has been created.
+The system allow only authenticated users to create, read, update and delete tasks. Also a real-time notification system using socket.io that emit events to let other users know when a task has been created.
 
 PROJECT STRUCTURE
 =================
@@ -28,22 +28,25 @@ task-manager/
 
 
 => controllers:
+- authController.js: Contains logic for registration and login.
 - taskControllers.js: Contains logics for handling create task,retrieving all tasks, retrieving a single task by Id, updating task and delete tasks.
-- authController.js: Contains logic for registration and login
 
 => routes:
+- authRoutes.js: Defines API endpoints for authentication and maps them to their corresponding controller functions.
 - taskRoutes.js: Defines API endpoints related to task management and maps them to corresponding controller functions.
-- authRoutes.js: Defines API endpoints for authentication and maps them to their corresponding controller functions
+
 
 => models:
+- userModel.js: Defines the Mongoose schema for users, including attributes like fullname, email and password.
 - taskModel.js: Defines the Mongoose schema for tasks, including attributes like user, title, description, completed and createdAt.
-- userModel.js: Defines the Mongoose schema for users, including attributes like fullname, email and password
+
 
 => config:
 db.js: Configuration file for database connection
 
 => middlewares:
 - authMiddleware.js: the middleware performs authorization checks based on user roles or permissions before allowing access to specific routes.
+
 => utils
 - socket.utils.js: This function enables real-time notifications about newly created tasks to all users.
 
@@ -56,7 +59,7 @@ db.js: Configuration file for database connection
  URLS:
  ====
 local url for postman =http://localhost:5000/api/v1
-remote url: https://task-manager-owiz.onrender.com
+remote url: https://task-manager-owiz.onrender.com/api/v1
 
 HOW TO SETUP AND RUN THE APPLICATION:
 ===========================

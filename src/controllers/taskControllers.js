@@ -1,6 +1,8 @@
 const { validationResult } = require('express-validator');
 const Task = require('../models/taskModel');
-const {sendTaskCreatedNotification} = require('../utils/socket.utils')
+const { sendTaskCreatedNotification } = require('../utils/socket.utils');
+const { io } = require('../app'); 
+
 
 // Create a new task
 exports.createTask = async (req, res) => {
