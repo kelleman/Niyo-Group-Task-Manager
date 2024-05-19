@@ -3,6 +3,9 @@ TASK MANAGEMENT SYSTEM, BACKEND DEVELOPER ASSESSMENT
 This is a task management system using Node.js, Express.js.
 The system allow only authenticated users to create, read, update and delete tasks. Also a real-time notification system using socket.io that emit events to let other users know when a task has been created.
 
+- POSTMAN DOCUMENTATION URL: https://documenter.getpostman.com/view/21753101/2sA3QmCuER
+
+
 PROJECT STRUCTURE
 =================
 task-manager/
@@ -58,7 +61,6 @@ db.js: Configuration file for database connection
 
  URLS:
  ====
-- Postman Documentation url: https://documenter.getpostman.com/view/21753101/2sA3QmCuER
 
 - local url for postman =http://localhost:5000/api/v1
 - remote url: https://task-manager-owiz.onrender.com/api/v1
